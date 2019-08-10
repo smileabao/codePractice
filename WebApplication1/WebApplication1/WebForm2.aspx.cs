@@ -12,12 +12,12 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Request["save_file"] != null)
-            {
-                MyUpload();
-                Response.Write("上傳完成");
-                Response.End();
-            }
+            //if (Request["save_file"] != null)
+            //{
+            MyUpload();
+            Response.Write("上傳完成");
+            Response.End();
+            //}
         }
 
         protected void MyUpload()
